@@ -61,7 +61,7 @@ export default function ProgressComponent() {
 
   const gettasks = async ()=>{
     try{
-      const response = await fetch("http://localhost:5000/api/gettasks")
+      const response = await fetch("https://lms-cjd2.onrender.com/api/gettasks")
       const data = await response.json()
       setTaskPosts(data)
       // console.log(data)

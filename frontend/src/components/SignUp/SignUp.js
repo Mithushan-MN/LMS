@@ -16,7 +16,7 @@ const SignUp = () => {
 
   // const handleSubmit = (e) =>{
   //   e.preventDefault()
-  //   axios.post('http://localhost:5000/api/createpost', {name,email,password})
+  //   axios.post('https://lms-cjd2.onrender.com/api/createpost', {name,email,password})
   //   .then(result => {console.log(result)
   //   navigate('/LogIn')
   //   })
@@ -27,7 +27,7 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/createstudent", {
+      const response = await fetch("https://lms-cjd2.onrender.com/api/createstudent", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

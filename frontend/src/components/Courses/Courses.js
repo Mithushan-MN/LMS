@@ -17,7 +17,7 @@ export default function Course() {
 
     const getCoueses = async ()=>{
       try{
-        const response = await fetch("http://localhost:5000/api/posts")
+        const response = await fetch("https://lms-cjd2.onrender.com/api/posts")
         const data = await response.json()
         setCourseposts(data)
         console.log(data)

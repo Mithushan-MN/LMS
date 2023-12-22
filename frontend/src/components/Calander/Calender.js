@@ -29,7 +29,7 @@ const Calender = () => {
         useEffect(() => {
             const fetchEvents = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/getevent');
+                const response = await fetch('https://lms-cjd2.onrender.com/api/getevent');
                 if (response.ok) {
                 const events = await response.json();
                 setCalendarEvents(events);
@@ -58,7 +58,7 @@ const Calender = () => {
             };
             try {
                 // Send a POST request to the server to create a new event
-                const response = await fetch('http://localhost:5000/api/postevent', {
+                const response = await fetch('https://lms-cjd2.onrender.com/api/postevent', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ const Calender = () => {
         };
     
         try {
-          const response = await fetch(`http://localhost:5000/api/updateevent/${arg.event.id}`, {
+          const response = await fetch(`https://lms-cjd2.onrender.com/api/updateevent/${arg.event.id}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',

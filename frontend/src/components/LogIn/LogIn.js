@@ -22,7 +22,7 @@ const Login = () => {
 
   const handleSubmit = (e) =>{
     e.preventDefault()
-    axios.post('http://localhost:5000/api/loginstudent', {email,password})
+    axios.post('https://lms-cjd2.onrender.com/api/loginstudent', {email,password})
     .then(result => {
       console.log(result)
       if(result.data === "success"){
